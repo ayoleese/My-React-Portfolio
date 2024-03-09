@@ -6,27 +6,22 @@ function NavBar () {
     return (
         <ul className='nav nav-tabs'>
             <li className='nav-item'>
-                <Link to='/' className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>
-                    About Me
-                </Link>
-            </li>
-            <li className='nav-item'>
                 <Link to='/' className={currentPage === '/AboutMe' ? 'nav-link active' : 'nav-link'}>
                     About Me
                 </Link>
             </li>
             <li className='nav-item'>
-                <Link to='/' className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}>
+                <Link to='/Portfolio' className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}>
                     Portfolio
                 </Link>
             </li>
             <li className='nav-item'>
-                <Link to='/' className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}>
+                <Link to='/Contact' className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}>
                     Contact
                 </Link>
             </li>
             <li className='nav-item'>
-                <Link to='/' className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}>
+                <Link to='/Resume' className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}>
                     Resume
                 </Link>
             </li>
