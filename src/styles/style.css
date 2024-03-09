@@ -1,0 +1,15 @@
+body {
+  background-color: #2a2e3c;
+  color: #e0e0e0;
+}
+
+.nav-link {
+  color: #E0E0E0;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #FF101F;
+}
