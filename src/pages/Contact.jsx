@@ -26,7 +26,7 @@ export default function Contact() {
 
     return (
         <div>
-            <h2 class="text-center">Contact</h2>
+            <h1>Contact</h1>
             <form className="form" onSubmit={handleFormSubmit}>
                 <div class="row mb-2">
                     <label class="col-sm-1" htmlFor="name">Name:</label>
