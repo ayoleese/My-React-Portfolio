@@ -5,6 +5,7 @@ const styles = {
     card: {
         background: '#2a2e3c',
         color: '#e0e0e0',
+        border: 'none',
     }
 }
 

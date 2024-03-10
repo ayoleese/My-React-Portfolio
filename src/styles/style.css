@@ -16,6 +16,8 @@ h1 {
   color: #E0E0E0;
   text-decoration: none;
   margin: 0 10px;
+  cursor: pointer; /* Add cursor pointer for better interaction */
+
   transition: color 0.3s ease;
 }
 
@@ -23,12 +25,12 @@ h1 {
   color: #FF101F;
 }
 
-
 .form {
-  border: #233D4D solid 4px;
+  border: none;
   margin: 20px;
   padding: 5%;
   width: 50%;
+  box-shadow: 0px 0px 22px 10px rgba(35, 61, 77, 0.7); /* Adjust the values for the shadow as needed */
 }
 
 .form input {
@@ -37,8 +39,25 @@ h1 {
   margin-bottom: 5px;
 }
 
-button {
+/* button {
   background-color: white;
   color: #233D4D;
   font-weight: bolder;
+} */
+
+button {
+  background-color: #233D4D; /* Change background color */
+  color: white; /* Change text color */
+  font-weight: bold; /* Use 'bold' instead of 'bolder' */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  cursor: pointer; /* Add cursor pointer for better interaction */
+  transition: background-color 0.3s, color 0.3s;
+  float: right; /* Add transition effect */
+}
+
+button:hover {
+  background-color: #1a2a35; /* Change background color on hover */
+  color: #FF101F; /* Change text color on hover */
 }
