@@ -6,16 +6,16 @@ const styles = {
         position: 'fixed',
         bottom: 0,
         width: '100%',
-        backgroundColor: '#2a2e3c', // Adjust background color if needed
+        // zIndex: 9999 // Ensure the footer is on top of other content
     },
     footer: {
         display: 'flex',
         justifyContent: 'center',
-        padding: '15px'
+        alignItems: 'center',
     },
     icon: {
         fontSize: "3rem",
-        marginRight: 65,
+        margin: 20,
         color: '#233D4D'
     }
 };
