@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 
+const styles = {
+    card: {
+        background: '#2a2e3c',
+        color: '#e0e0e0',
+    }
+}
+
 export default function Contact() {
     const [formData, setFormData] = useState({
         name: '',
@@ -25,51 +32,56 @@ export default function Contact() {
     };
 
     return (
-        <div>
-            <h1>Contact</h1>
-            <form className="form" onSubmit={handleFormSubmit}>
-                <div class="row mb-2">
-                    <label class="col-sm-1" htmlFor="name">Name:</label>
-                    <div class="col-sm-7">
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        required
-                    />
+        <div className="card" style={styles.card}>
+            <div className="card-body">
+                <h1>Contact</h1>
+                <form className="form" onSubmit={handleFormSubmit}>
+                    <div className="form-group row mb-2">
+                        <label className="col-sm-3" htmlFor="name">Name:</label>
+                        <div className="col-sm-9">
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                value={formData.name}
+                                onChange={handleInputChange}
+                                className="form-control"
+                                required
+                            />
+                        </div>
                     </div>
-                </div>
-                <div class="row mb-2">
-                    <label class="col-sm-1" htmlFor="email">Email:</label>
-                    <div class="col-sm-7">
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                    />
+                    <div className="form-group row mb-2">
+                        <label className="col-sm-3" htmlFor="email">Email:</label>
+                        <div className="col-sm-9">
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleInputChange}
+                                className="form-control"
+                                required
+                            />
+                        </div>
                     </div>
-                </div>
-                <div class="row mb-3">
-                    <label class="col-sm-1" htmlFor="message">Message:</label>
-                    <div class="col-sm-7">
-                    <textarea
-                        class="form-control-sm"
-                        rows="3"
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleInputChange}
-                        required
-                    />
+                    <div className="form-group row mb-4">
+                        <label className="col-sm-3" htmlFor="message">Message:</label>
+                        <div className="col-sm-9">
+                            <textarea
+                                className="form-control"
+                                rows="3"
+                                id="message"
+                                name="message"
+                                value={formData.message}
+                                onChange={handleInputChange}
+                                required
+                            />
+                        </div>
                     </div>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>        
     );
 }
+

@@ -6,10 +6,10 @@ body {
 }
 
 h1 {
-  margin: 0;
-  padding-top: 75px;
+  margin-bottom: 100px;
+  padding-top: 65px;
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .nav-link {
@@ -21,4 +21,23 @@ h1 {
 
 .nav-link:hover {
   color: #FF101F;
+}
+
+.form {
+  border: #233D4D solid 4px;
+  margin: 20px;
+  padding: 5%;
+  width: 50%;
+}
+
+.form input {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+button {
+  background-color: white;
+  color: #233D4D;
+  font-weight: bolder;
 }
