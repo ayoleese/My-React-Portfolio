@@ -6,6 +6,7 @@ export default function Contact() {
         email: '',
         message: '',
     });
+    const [showNotification, setShowNotification] = useState(false); // State for notification
     
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -17,11 +18,19 @@ export default function Contact() {
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
+        setShowNotification(true); //displays notification when user submit form
+        
+        // Form reset after submitting
         setFormData({
             name: '',
             email: '',
             message: ''
         });
+
+        // Hides notification after 3 seconds
+        setTimeout(() => {
+            setShowNotification(false);
+        }, 3000);
     };
 
     return(
@@ -65,6 +74,14 @@ export default function Contact() {
                     <button type="submit">Submit</button>
                 </form>
             </div>
+            {showNotification && (
+                <div className="popup">
+                    <div className="popup-content">
+                        <span className="close" onClick={() => setShowNotification(false)}>&times;</span>
+                        <p>Thanks for contacting me, I will get back to you shortly!</p>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
