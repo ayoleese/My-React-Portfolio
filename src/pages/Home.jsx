@@ -24,7 +24,7 @@ const styles = {
         width: '75%', // width of the image
         height: '75%', // height of the image
         borderRadius: '50%', // round up the photo
-        opacity: 0.7, // Lighten up the photo
+        opacity: 0.6, // Lighten up the photo
     }
 };
 

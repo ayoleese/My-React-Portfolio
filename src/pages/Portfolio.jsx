@@ -8,7 +8,7 @@ export default function Portfolio() {
   return (
     <div>
       <h1>Portfolio</h1>
-      <div className="card-container">
+      <div className="card-container-port">
         <div className="card-port">
           <a href="https://jeffch19.github.io/Find-a-movie/">
             <img src={Project1} alt="Project 1" />

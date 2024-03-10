@@ -16,7 +16,7 @@ h1 {
   color: #E0E0E0;
   text-decoration: none;
   margin: 0 10px;
-  cursor: pointer; /* Add cursor pointer for better interaction */
+  cursor: pointer;
 
   transition: color 0.3s ease;
 }
@@ -25,39 +25,51 @@ h1 {
   color: #FF101F;
 }
 
-.form {
-  border: none;
-  margin: 20px;
-  padding: 5%;
-  width: 50%;
-  box-shadow: 0px 0px 22px 10px rgba(35, 61, 77, 0.7); /* Adjust the values for the shadow as needed */
+.card-container {
+  border-radius: 8px;
+  box-shadow: 0px 0px 22px 10px rgba(35, 61, 77, 0.7);
+  padding: 20px;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
-.form input {
-  display: block;
-  margin-top: 5px;
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+label {
   margin-bottom: 5px;
 }
 
-/* button {
-  background-color: white;
-  color: #233D4D;
-  font-weight: bolder;
-} */
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
 
 button {
-  background-color: #233D4D; /* Change background color */
-  color: white; /* Change text color */
-  font-weight: bold; /* Use 'bold' instead of 'bolder' */
-  border: none; /* Remove border */
+  background-color: #233D4D;
+  color: white; 
+  font-weight: bold; 
+  border: none; 
   padding: 10px 20px; /* Add padding */
   border-radius: 5px; /* Add border-radius for rounded corners */
   cursor: pointer; /* Add cursor pointer for better interaction */
   transition: background-color 0.3s, color 0.3s;
-  float: right; /* Add transition effect */
 }
 
 button:hover {
-  background-color: #1a2a35; /* Change background color on hover */
+  background-color: #1a2a35; 
   color: #FF101F; /* Change text color on hover */
 }

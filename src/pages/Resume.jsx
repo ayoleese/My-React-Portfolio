@@ -3,7 +3,7 @@ import { BsFiletypeDoc } from "react-icons/bs";
 
 export default function Resume() {
     return (
-        <div>
+        <div style={{ marginLeft: "50px"}}>
             <h1>Resume</h1>
             <div style={{ display: "flex", alignItems: "center" }}>
                 <span style={{ fontSize: "18px" }}>Download Resume</span>
