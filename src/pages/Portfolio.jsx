@@ -3,6 +3,7 @@ import '../styles/Portfolio.css'; // Import a CSS file
 import OurSpaceProject from '../images/OurSpaceProject.png';
 import Project1 from '../images/Project1.png';
 import GithubLogo from '../images/GithubLogo.png';
+import ActivateMe from '../images/ActivateMe';
 
 export default function Portfolio() {
   return (
@@ -10,15 +11,21 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
       <div className="card-container-port">
         <div className="card-port">
-          <a href="https://jeffch19.github.io/Find-a-movie/">
-            <img src={Project1} alt="Project 1" />
-            <div className="card-title">Project 1</div>
+          <a href="https://activateme.onrender.com/">
+            <img src={ActivateMe} alt="Final Project" />
+            <div className="card-title">Project 3</div>
           </a>
         </div>
         <div className="card-port">
           <a href="https://our--space-1c334f1f25f8.herokuapp.com/">
             <img src={OurSpaceProject} alt="Project 2" />
             <div className="card-title">Project 2</div>
+          </a>
+        </div>
+        <div className="card-port">
+          <a href="https://jeffch19.github.io/Find-a-movie/">
+            <img src={Project1} alt="Project 1" />
+            <div className="card-title">Project 1</div>
           </a>
         </div>
         <div className="card-port">
