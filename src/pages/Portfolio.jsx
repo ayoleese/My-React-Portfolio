@@ -3,7 +3,7 @@ import '../styles/Portfolio.css'; // Import a CSS file
 import OurSpaceProject from '../images/OurSpaceProject.png';
 import Project1 from '../images/Project1.png';
 import GithubLogo from '../images/GithubLogo.png';
-import ActivateMe from '../images/ActivateMe';
+import ActivateMe from '../images/ActivateMe.png';
 
 export default function Portfolio() {
   return (
@@ -12,7 +12,7 @@ export default function Portfolio() {
       <div className="card-container-port">
         <div className="card-port">
           <a href="https://activateme.onrender.com/">
-            <img src={ActivateMe} alt="Final Project" />
+            <img src={ActivateMe} alt="Activate Me" />
             <div className="card-title">Project 3</div>
           </a>
         </div>

@@ -3,10 +3,9 @@ import { BsTwitterX, BsLinkedin, BsGithub } from "react-icons/bs";
 
 const styles = {
     card: {
-        position: 'fixed',
         bottom: 0,
         width: '100%',
-        // zIndex: 9999 // Ensure the footer is on top of other content
+        zIndex: 9999 // Ensure the footer is on top of other content
     },
     footer: {
         display: 'flex',
